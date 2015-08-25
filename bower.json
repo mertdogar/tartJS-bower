@@ -1,5 +1,5 @@
 {
-  "name": "tartJS",
+  "name": "tartJS-bower",
   "version": "0.0.1",
   "authors": [
     "Mert Dogar <mertdogar@gmail.com>"
@@ -12,7 +12,11 @@
     "tartjs"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/tart/tartJS",
+  "homepage": "https://github.com/mertdogar/tartJS-bower",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mertdogar/tartJS-bower.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
