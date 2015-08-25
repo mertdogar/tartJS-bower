@@ -1,0 +1,23 @@
+{
+  "name": "tartJS",
+  "version": "0.0.1",
+  "authors": [
+    "Mert Dogar <mertdogar@gmail.com>"
+  ],
+  "description": "A performance-obsessed JavaScript framework for desktop, mobile and web applications.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "tartjs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tart/tartJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
