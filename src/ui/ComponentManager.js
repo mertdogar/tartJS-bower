@@ -6,6 +6,7 @@
 
 goog.provide('tart.ui.ComponentManager');
 goog.require('tart.events');
+goog.require('tart.dom');
 goog.require('goog.array');
 goog.require('goog.events.EventType');
 goog.require('tart.events.HoverHandler');
@@ -172,7 +173,7 @@ tart.ui.ComponentManager.prototype.callHandler_ = function(cmp, e, handlers, sel
  * @return {*}
  */
 tart.ui.ComponentManager.prototype.matchesSelector = function(el, selector) {
-    return goog.array.indexOf(goog.dom.query(selector), el) >= 0;
+    return goog.array.indexOf(tart.dom.query(selector), el) >= 0;
 };
 
 

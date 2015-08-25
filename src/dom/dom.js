@@ -37,4 +37,14 @@ goog.provide('tart.dom');
         tempDiv.innerHTML = htmlString;
         return /** @type {!Node} */ (tempDiv.removeChild(tempDiv.firstChild));
     };
+
+
+    /**
+     * @param {string} query
+     * @param {Element=} opt_parent
+     */
+    tart.dom.query = function(query, opt_parent) {
+        var rootEl_ = opt_parent ? opt_parent : document;
+        return rootEl_.querySelectorAll(query);
+    };
 })();

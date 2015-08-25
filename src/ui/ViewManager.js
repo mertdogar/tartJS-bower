@@ -13,6 +13,7 @@
 // limitations under the License.
 
 goog.provide('tart.ui.ViewManager');
+goog.require('tart.dom');
 goog.require('goog.math');
 
 
@@ -415,7 +416,7 @@ tart.ui.ViewManager.prototype.closeSidebarTouchMove_ = function(e) {
 tart.ui.ViewManager.prototype.toggleSidebar_ = function(state) {
     var that = this,
         currentView = this.currentView,
-        sidebar = goog.dom.query('sidebar-view')[0];
+        sidebar = tart.dom.query('sidebar-view')[0];
 
     setTimeout(function() {
         currentView.getElement().style.webkitTransitionDuration = '0.35s';
@@ -465,7 +466,7 @@ tart.ui.ViewManager.prototype.openSidebarTouchMove_ = function(e) {
      do not call event.preventDefault(). */
     e.preventDefault();
 
-    var sidebar = goog.dom.query('sidebar-view')[0];
+    var sidebar = tart.dom.query('sidebar-view')[0];
     var currentView = this.currentView;
     var currentViewDiff = clientX - this.firstX;
 

@@ -22,7 +22,7 @@
  */
 
 goog.provide('tart.ui.DlgComponent');
-goog.require('goog.dom.query');
+goog.require('tart.dom');
 goog.require('tart.ui.ComponentManager');
 goog.require('goog.events.EventTarget');
 goog.require('tart');
@@ -83,7 +83,7 @@ tart.ui.DlgComponent.prototype.getChild = function (selector) {
     var rv = null, el = this.getElement();
 
     if (el)
-        rv = goog.dom.query(selector, el);
+        rv = tart.dom.query(selector, el);
 
     return rv;
 };
