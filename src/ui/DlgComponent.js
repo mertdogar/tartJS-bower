@@ -35,6 +35,8 @@ goog.require('tart.dom');
  * @constructor
  */
 tart.ui.DlgComponent = function() {
+    goog.base(this);
+
     this.id = tart.getUid();
 
     tart.ui.ComponentManager.getInstance().set(this);
